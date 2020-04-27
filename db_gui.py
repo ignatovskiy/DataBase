@@ -12,16 +12,16 @@ class MainWindow(tk.Frame):
         self.column_names = ("Nickname", "Battles", "Wins", "Tanks", "Ban?", "Tester?", "Motto", "Clan")
         self.columns = dict(zip(db.fields, self.column_names))
 
-        self.add_record = tk.PhotoImage(file="add_record.png")
-        self.edit_record = tk.PhotoImage(file="edit_record.png")
-        self.delete_record = tk.PhotoImage(file="delete_record.png")
-        self.find_record = tk.PhotoImage(file="find_record.png")
-        self.create_db = tk.PhotoImage(file="create_db.png")
-        self.save_db = tk.PhotoImage(file="save_db.png")
-        self.delete_db = tk.PhotoImage(file="delete_db.png")
-        self.export_db = tk.PhotoImage(file="export_db.png")
-        self.to_backup = tk.PhotoImage(file="to_backup.png")
-        self.from_backup = tk.PhotoImage(file="from_backup.png")
+        self.add_record = tk.PhotoImage(file="icons/add_record.png")
+        self.edit_record = tk.PhotoImage(file="icons/edit_record.png")
+        self.delete_record = tk.PhotoImage(file="icons/delete_record.png")
+        self.find_record = tk.PhotoImage(file="icons/find_record.png")
+        self.create_db = tk.PhotoImage(file="icons/create_db.png")
+        self.save_db = tk.PhotoImage(file="icons/save_db.png")
+        self.delete_db = tk.PhotoImage(file="icons/delete_db.png")
+        self.export_db = tk.PhotoImage(file="icons/export_db.png")
+        self.to_backup = tk.PhotoImage(file="icons/to_backup.png")
+        self.from_backup = tk.PhotoImage(file="icons/from_backup.png")
 
         self.records_list = ttk.Treeview(self,
                                          columns=db.fields,
